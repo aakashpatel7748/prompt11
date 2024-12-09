@@ -1,20 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
-main{
+main {
     width: 100%;
     height: 100%;
-   
-    
+background-color: #00B2CA;
+/* position: fixed; */
+  overflow: hidden;
 }
-.content{
+
+.content {
     width: 450px;
     height: 250px;
     background-color: rgb(33, 32, 32);
@@ -23,103 +27,229 @@ main{
     border-radius: 5px;
 }
 
-.nav1{
+.nav1 {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    
+
 }
-.content > .nav1 > h6{
+
+.content>.nav1>h6 {
     font-weight: lighter;
     color: rgb(96, 92, 92);
 }
-.hading{
+
+.hading {
     padding: 30px 20px;
     font-size: 20px;
-    
+
 }
-.hading > h1{
+
+.hading>h1 {
     font-size: 45px;
     font-weight: 500;
 }
-.hading > p {
-    
-    padding: 3px 10px;
-    
+
+.hading>p {
+    padding: 3px 5px;
     font-size: 10px;
 }
-.footer{
+
+.footer {
     border-top: 1px solid rgb(104, 100, 100);
     display: flex;
-   /* padding-top:117px ; */
-   padding: 12px 20px;
+    /* padding-top:117px ; */
+    padding: 12px 20px;
     justify-content: space-between;
     color: rgb(96, 92, 92);
 }
+
 /* ========================content2============= */
 
-.content2{
+.content2 {
     margin-left: 5%;
     width: 88%;
     height: 250px;
-    background-color: red;
+    background-color: white;
     display: flex;
+    /* gap: 30px; */
     align-items: center;
-    justify-content: space-between;
-   
+    /* justify-content: space-between; */
+
 }
 
-.content2-left{
+.content2-left {
     width: 50%;
     height: 100%;
+    
     border-right: 1px solid black;
-    display: flex;
+     /* display: flex;
     flex-direction: column;
-     padding: 0 10px;
-    justify-content: space-evenly;
+    padding: 0 10px;
+    justify-content: space-evenly;  */
 }
-.nav2{
+
+.nav2 {
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    
+
 }
- .nav2 > h6{
+
+.nav2>h6 {
     font-weight: lighter;
     color: rgb(96, 92, 92);
 }
-.hading2{
-    padding: 30px 20px;
-    font-size: 20px;
+
+.hading2 {
+    padding: 55px 20px;
+    /* font-size: 20px; */
     display: flex;
-    gap: 100px;
+    gap: 30px;
 }
-.hading2 > h1{
-    font-size: 45px;
-    font-weight: 500;
-    padding-top: 10px;
+.hading2 > p{
+    /* padding: 10px 40px; */
+    font-size: 18px;
+    padding-left: 120px;
+    padding-top: 7px;
 }
-.hading2 > p {
-    padding: 3px 10px;
-   font-size: 18px;
-}
-.footer2{
+ .footer2 {
     border-top: 1px solid rgb(104, 100, 100);
     display: flex;
-   /* padding-top:117px ; */
-   padding: 12px 20px;
+    /* padding-top:117px ; */
+    padding: 12px 20px;
     justify-content: space-between;
     color: rgb(96, 92, 92);
 }
 
-.content2-right{
+.content2-right {
     width: 50%;
-   
     height: 100%;
- 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-     padding: 0 10px;
-    justify-content: space-evenly;
+    padding: 0 10px;
+    justify-content: space-evenly; */
 }
 
+.hading3{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 55px;
+}
+
+.no1 > h1{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100px;
+   font-size: 39px; 
+   border-top: 1px solid black;
+   font-weight: 500;
+}
+.no2 > h1{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100px;
+   font-size: 39px; 
+   border-top: 1px solid black;
+   font-weight: 500;
+}
+.no1 > h1{
+    /* display: flex;
+    flex-direction: column; */
+    width: 100px;
+   font-size: 39px; 
+   border-top: 1px solid black;
+   font-weight: 500;
+}
+
+
+/* ===============responsive============ */
+
+@media(max-width:600px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    main{
+        width: 100vw;
+        height: auto;
+        overflow-y: auto;
+        
+    }
+    .content{
+        width: 90%;
+        height: 200px;
+        padding: 10px 5px;
+    }
+    
+    .nav1{
+       padding: 2px 3px; 
+    }
+    .content > .hading{
+       padding: 30px 10px;
+    }
+
+    .content > .hading > h1{
+       font-size: 28px;
+       
+    }
+    .footer{
+        padding: 10px 3px;
+    }
+
+    .content2{
+        width: 90%;
+        height: auto;
+         display: flex;
+         flex-direction: column; 
+         border: none;  
+         align-items: center;
+         justify-content: center;
+         /* margin: 3% ; */
+         
+    }
+    .content2-left{
+        width: 100%;
+        /* height: 300px; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 13px 10px;
+    }
+    .nav2{
+       gap: 10px;
+       
+    }
+    .hading2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .hading2 > h1{
+          font-size: 50px;
+          padding: 0 1%;
+     }
+    .hading2 > p {
+        padding: 0 10%;
+    }
+    .footer2{
+        gap: 5px;
+    }
+
+    .content2-right{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hading3{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
